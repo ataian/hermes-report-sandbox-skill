@@ -1,0 +1,6 @@
+FROM python:3.12-alpine
+RUN apk add --no-cache tzdata
+WORKDIR /app
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PYTHONSAFEPATH=1
+USER 65532:65532
+CMD ["python", "/app/select.py"]
