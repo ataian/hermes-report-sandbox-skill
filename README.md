@@ -51,7 +51,7 @@ Die Aufgaben werden in drei getrennte Rollen aufgeteilt:
 |---|---|---|
 | **Reportmaker** | Quellen abrufen, verarbeiten und einen Bericht erzeugen | Nur eigener Code, notwendige Zugänge, optional eigener Zustand und genau ein Ausgabe-Laufverzeichnis; kein Versand und kein Vault-Zugriff |
 | **Delivery** | Fertige Berichte technisch prüfen, im Vault ablegen und optional versenden | Feste, außerhalb des Reports konfigurierte Ziele; keine frei agierende LLM-Schleife |
-| **Modellselektor** | Ein geeignetes Modell auswählen und eine gemeinsame Konfiguration bereitstellen | Eigener Cache und eigene Ausgabe; keine Änderungen an Cronjobs |
+| **Modellselektor** | Ein geeignetes freies Modell auswählen und eine gemeinsame Konfiguration bereitstellen | Eigener Cache und eigene Ausgabe; keine Änderungen an Cronjobs |
 
 ```text
 Hermes-Scheduler → Hoststarter → Reportmaker-Container
